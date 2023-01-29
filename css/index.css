@@ -1,0 +1,233 @@
+/* 
+    BEM Conventions: A methodology, that helps to achieve reusable components
+    Reference Link: https://getbem.com/naming/
+    1. B: Block
+        .stick-man {}
+    2. E: Elements
+        .stick-man__head {}
+        .stick-man__arms {}
+    3. M: Modifiers
+        .stick-man--blue {}
+        .stick-man--red {}
+    4. Miscellanous
+        .stick-man__head--small {}
+        .stick-man__head--big {}
+    5. Don't use data- 
+        because it is used for special purpose
+*/
+body {
+    width: 600px;
+    margin: 0 auto;
+    color: #000000;
+    font-family: 'Smythe';
+    font-style: normal;
+}
+
+/* topography */
+header {
+    height: 167px;
+    background-image: url('/img/herbs-and-vegetables-01.png');
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+h1,
+h3 {
+    margin: 0;
+    text-shadow: 0 0 5px white;
+}
+
+h4 {
+    margin: 10px 0 3px 0;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 17px;
+}
+
+small {
+    margin: 3px 0 3px 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8B8B8B;
+}
+
+h5 {
+    margin: 3px 0 3px 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+span {
+    font-size: 60px;
+    vertical-align: top;
+    line-height: 2;
+    text-align: center;
+}
+
+/* layout */
+.header {
+    padding: 45px 0 0 50px;
+}
+
+.menu__item {
+    margin: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.menu__item .span-class {
+    height: 50px;
+    width: 50px;
+}
+
+.item__description {
+    display: flex;
+    gap: 31px;
+}
+
+.item__description .icon {
+    opacity: 0.72;
+}
+
+.item__description .content {
+    padding: 20px 0 30px 0;
+}
+
+.item__add-item {
+    border: 1.5px solid #DEDEDE;
+    box-sizing: border-box;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 32px;
+    line-height: 39px;
+    cursor: pointer;
+}
+
+.order-summary {
+    text-align: center;
+    display: none;
+}
+
+.order-item,
+.total-price {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+}
+
+.order-item__add-remove {
+    display: flex;
+    align-items: baseline;
+    justify-content: start;
+}
+
+.order-item__name,
+.order-item__price,
+.total-price {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 10px;
+}
+
+.order-item__remove {
+    border: none;
+    background-color: white;
+    font-family: 'Verdana';
+    font-weight: 400;
+    font-size: 12px;
+    color: #BBBBBB;
+    cursor: pointer;
+}
+
+.total-price {
+    margin-top: 20px;
+    border-top: 2px solid #393333;
+    ;
+}
+
+.complete-order {
+    width: 508px;
+    height: 60px;
+    background: #16DB99;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'Verdana';
+    margin-top: 40px;
+    border: none;
+}
+
+.order-heading {
+    margin: 40px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.pay-model {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #FFFFFF;
+    filter: drop-shadow(5.18654px 5.18654px 255.437px rgba(0, 0, 0, 0.5));
+    width: 524px;
+    height: 542.24px;
+    padding: 25px;
+    border-radius: 5px;
+    display: none;
+    box-shadow: 0px 0px 20px 1px #666;
+}
+
+.card-details {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 46.07px;
+}
+
+.payment-inputs {
+    display: block;
+    padding: 10px;
+    width: 455.91px;
+    height: 51.3px;
+    margin: 23.22px auto;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.pay-btn {
+    width: 475.91px;
+    height: 71.3px;
+    display: block;
+    margin: 45px auto;
+    background: #16DB99;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'Verdana';
+    border: none;
+}
+
+.thanks {
+    margin: 45px auto;
+    width: 500px;
+    height: 120px;
+    background: #ECFDF5;
+    border-radius: 3px;
+}
+
+.your-name {
+    padding: 46px 10px;
+    font-weight: 400;
+    font-size: 22px;
+    color: #065F46;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS file -->
+  <link rel="stylesheet" href="css/index.css">
+  <title>Restaurent Ordering App</title>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <h1>Shivani's Dine</h1>
+      <h3>The best satvik food in town</h3>
+    </div>
+  </header>
+  <main>
+    <section class="menu" id="menu-section">
+      <!-- index.js ~> populateMenuSection -->
+    </section>
+    <section class="order-summary" id="order-summary">
+      <h2 class="order-heading">Your Order</h2>
+      <div class="order" id="order"></div>
+      <div class="total-price">
+        <p>Total price:</p>
+        <p id="total-price"></p>
+      </div>
+      <button class="complete-order" 
+              id="complete-order">
+        Complete Order
+      </button>
+    </section>
+    <section class="pay-model" id="pay-model">
+      <h3 class="card-details">Enter card details</h3>
+      <form action="" method="post" id="payment-form">
+        <input type="text" 
+               name="full-name" 
+               id="full-name" 
+               class="payment-inputs" 
+               placeholder="Enter your name" 
+               required>
+        <input type="text" 
+               name="card-number" 
+               class="payment-inputs" 
+               placeholder="Enter card number" 
+               required>
+        <input type="text" 
+               name="cvv" 
+               class="payment-inputs" 
+               placeholder="Enter CVV" 
+               required>
+        <button type="submit" 
+                class="pay-btn">
+          Pay
+        </button>
+      </form>
+    </section>
+  </main>
+  <!-- Main JS file -->
+  <script src="js/index.js" type="module"></script>
+</body>
+
+</html>
