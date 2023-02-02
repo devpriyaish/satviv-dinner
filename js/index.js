@@ -56,6 +56,7 @@ function removeOrder(orderId) {
       total -= subtractTotal.price
       totalPrice.textContent = `$${total}`
       orderItem[i].remove()
+      break
     }
   }
   if (orderItem.length === 0) {
